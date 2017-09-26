@@ -352,7 +352,7 @@ UsedLibrary="/home/dmacklin/eagle-8.3.2/lbr/adafruit.lbr"
 [Win_1]
 Type="Control Panel"
 Loc="0 27 1199 666"
-State=2
+State=1
 Number=0
 
 [Desktop]
