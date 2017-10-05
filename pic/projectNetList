@@ -1,14 +1,10 @@
 Netlist
 
-Exported from pic.sch at 28/09/2017 3:07 P.M.
+Exported from pic.sch at 05/10/2017 2:35 P.M.
 
 EAGLE Version 8.3.2 Copyright (c) 1988-2017 Autodesk, Inc.
 
 Net      Part     Pad      Pin        Sheet
-
-0SC1     JP4      14       14         1
-
-0SC2     U1       7        OSC2       1
 
 A0       IC1      2        RA0/AN0    1
          JP4      2        2          1
@@ -145,6 +141,8 @@ GND      C1       2        2          1
          IC1      12       VSS        1
          IC1      31       VSS        1
          IC4      2        GND        1
+         IC5      6        GND        1
+         IC5      9        GND        1
          IC7      2        GND        1
          IC7      8        RS         1
          J1       1        1          1
@@ -173,12 +171,12 @@ GND      C1       2        2          1
          X3       6        6          1
 
 LRX0     IC7      1        TXD        1
-         IC7      4        RXD        1
          R16      2        2          1
          U1       1        TXCAN      1
-         U1       2        RXCAN      1
 
-LTX0     R15      2        2          1
+LTX0     IC7      4        RXD        1
+         R15      2        2          1
+         U1       2        RXCAN      1
 
 N$1      JP1      2        2          1
          R2       2        2          1
@@ -200,9 +198,6 @@ N$4      IC7      7        CANH       1
 N$10     C7       +        +          1
          IC4      1        VI         1
          J1       3        3          1
-
-N$19     IC5      6        GND        1
-         IC5      9        GND        1
 
 N$20     F2       1        1          1
          IC4      3        VO         1
@@ -268,6 +263,7 @@ N$46     C13      +        +          1
 OSC1     C2       2        2          1
          C9       +        +          1
          IC1      13       OSC1/CLKIN 1
+         JP4      14       14         1
          Q2       2        2          1
          Q3       2        2          1
          U1       8        OSC1       1
@@ -277,6 +273,7 @@ OSC2     C8       +        +          1
          JP4      13       13         1
          Q3       1        1          1
          R1       2        2          1
+         U1       7        OSC2       1
 
 RESET    IC1      1        !MCLR/THV  1
          J5       1        1          1
